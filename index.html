@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DBATU F.Y BTech Result 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      z-index: 1;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 80%;
+      margin: 15px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 400px;
+      position: relative;
+    }
+
+    .modal p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>DBATU F.Y BTech Result 2025</h2>
+    <p>Enter Your Roll Number (PRN):</p>
+    <input type="text" id="prn" placeholder="e.g., 00000123456">
+    <br>
+    <button onclick="checkResult()">Check Result</button>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <p>Failed ahe to kay krto result bagon abyas kar jaa</p>
+    </div>
+  </div>
+
+  <script>
+    function checkResult() {
+      document.getElementById("modalOverlay").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("modalOverlay").style.display = "none";
+    }
+  </script>
+</body>
+</html>
